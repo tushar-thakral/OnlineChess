@@ -1,0 +1,102 @@
+body {
+	overflow-y: auto;
+	
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+	align-items: center;
+	font: 15px/1.5 Arial, Helvetica,sans-serif;
+	background-color: #5fbcd3;
+}
+/* Global */
+.container{
+	width:2000px;
+	margin:auto;
+	overflow:hidden;
+  }
+    
+  /* Header **/
+  header{
+	background: #216778;
+	color:#ffffff;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom: #5fbcd3 3px solid;
+  }
+
+  
+  
+header .highlight, header .current a{
+	color:#5fbcd3;
+	font-weight:bold;
+	margin-left: 850px;
+  }
+  
+  header nav{
+	float:right;
+	margin-top:10px;
+  }
+
+.page {
+	margin-top: 20px;
+}
+
+.page-login {
+	display: flex;
+	flex-direction: column;
+}
+	
+	.page.login .logo {
+		display: block;
+		background-color: lightgray;
+		background-image: url('/img/chess.jpeg');
+		background-size: cover;
+		background-position: center center;
+
+		margin-bottom: 50px;	
+		
+		width: 600px;
+		height: 350px;
+	}
+	
+	.page.login button {
+		margin-left: 35px;
+		margin-bottom: 20px;
+		height: 35px;
+		background-color: #2795b1;
+	}
+	
+	.page.login input {
+		margin-left: 140px;
+		margin-bottom: 20px;
+		width: 202px;
+		height: 25px;
+		font-size: 12pt;
+		padding: 2px;
+		
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px; 
+	}
+
+	.page.lobby h2 {
+		color: black;
+	}
+
+	.page.lobby h3 {
+		margin-bottom: 10px;
+		margin-top: 40px;
+	}
+	
+.page.game button {
+	margin-bottom: 10px;	
+	background-color: #2795b1;
+}
+
+#page-lobby{
+	display: none;
+}
+
+#page-game {
+	display: none;
+}
